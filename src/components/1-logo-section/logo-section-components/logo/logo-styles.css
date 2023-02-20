@@ -1,0 +1,11 @@
+/* Define the styles for the Logo component */
+.Logo {
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+  }
+  
+  /* Define the styles for the Logo component when it is visible */
+  .Logo.visible {
+    opacity: 1;
+  }
+  
