@@ -1,17 +1,12 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import './slogan-styles.css';
 import { CheckOrientation } from '../../../../utils/CheckOrientation.jsx';
 
 function Slogan() {
   const isVertical = CheckOrientation();
-  const [fadeIn, setFadeIn] = useState(false);
-
-  useEffect(() => {
-    setFadeIn(true);
-  }, []);
 
   return (
-    <div className={`slogan-container ${fadeIn ? 'fade-in' : ''}`}>
+    <div className={'slogan-container'}>
       <div className="center-box">
         <div className="animated-border-box-glow"></div>
         <div className="animated-border-box">
@@ -19,8 +14,7 @@ function Slogan() {
             style={{
               fontSize: isVertical ? 'max(1rem, 4vw)' : '1rem',
               color: 'white',
-              padding: 'min(5%,1rem)',
-              width: isVertical ? '70vw' : '50vw',
+              padding: '1rem',
               minWidth: 250,
               textAlign: 'center',
               display: 'flex',
@@ -29,9 +23,10 @@ function Slogan() {
               letterSpacing: '0.2rem',
               wordSpacing: '0.4rem',
               margin: 0,
+              width: '100%',
             }}
           >
-            The way you see it
+            Full Stack Web Developer
           </p>
         </div>
       </div>

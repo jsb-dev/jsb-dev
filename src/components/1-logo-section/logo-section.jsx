@@ -1,14 +1,13 @@
 import React from 'react';
-import Logo from './logo-section-components/logo/logo.jsx';
-import Slogan from './logo-section-components/slogan/slogan.jsx';
+import MainHeader from './logo-section-components/main-header/main-header.jsx';
 import Brief from './logo-section-components/brief/brief.jsx';
 import StarsBg from '../../assets/images/section-1-bg-casey-horner.jpg';
 import { CheckOrientation } from '../../utils/CheckOrientation.jsx';
+import { CheckDevice } from '../../utils/CheckDevice.jsx';
 
 function LogoSection() {
   const isVertical = CheckOrientation();
-  const isMobile = window.innerWidth < 601;
-  const isTablet = window.innerWidth < 961;
+  const isMobile = CheckDevice();
 
   return (
     <section
@@ -16,7 +15,6 @@ function LogoSection() {
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        overflow: 'hidden',
       }}
     >
       <div
@@ -25,54 +23,39 @@ function LogoSection() {
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat',
-          width: '100vw',
         }}
       >
         <div
           style={{
             backgroundColor: 'rgba(0, 0, 0, 0.2)',
-            width: '100vw',
           }}
         >
           <div
             style={{
               backgroundColor: 'rgba(102, 38, 158, 0.1)',
-              width: '100vw',
-              minHeight: '100vh',
               display: 'flex',
+              flexDirection: 'column',
               justifyContent: 'center',
-              padding: isVertical ? '5% 0' : '2% 0',
+              alignItems: 'center',
+              padding: isVertical ? '2rem 0' : '1rem 0',
+              minHeight: '100vh',
+              boxShadow: 'inset 0 0 2.5rem 1.5rem rgb(0, 0, 0)',
             }}
           >
             <div
               style={{
                 display: 'flex',
-                justifyContent: 'space-between',
                 alignItems: 'center',
                 flexDirection: 'column',
-                width: '100%',
-                height: '80vh',
+                width: isVertical ? '90%' : '50%',
+                transform: 'scale(0.9)',
               }}
             >
+              <MainHeader />
               <div
                 style={{
-                  width: isVertical ? '90vw' : '40vw',
-                  minWidth: 300,
-                }}
-              >
-                <Logo />
-              </div>
-              <div>
-                <Slogan />
-              </div>
-              <div
-                style={{
-                  display: 'flex',
-                  justifyContent: 'center',
-                  alignItems: 'center',
-                  flexDirection: 'column',
-                  width: isVertical ? '70vw' : '50vw',
-                  margin: isMobile ? '15%' : isTablet ? '20%' : '5%',
+                  margin: isMobile ? '15%' : '5%',
+                  width: '100%',
                 }}
               >
                 <Brief />

@@ -5,14 +5,13 @@
     position: relative;
     overflow: hidden; 
     z-index: 0;
-    border-radius: 10px;
-    border-radius: 20px;
+    border-radius: 1rem;
   }
   
   .animated-border-box{
     overflow: hidden;
     box-shadow: inset 0 0 10px 1px #a4d2f5;
-    border-radius: 20px;
+    border-radius: 1rem;
   }
   
   .animated-border-box:before, .animated-border-box-glow:before {
@@ -31,7 +30,7 @@
     background-image: conic-gradient(rgba(0,0,0,0), #25d5db, rgba(0,0,0,0) 25%);
     /* change speed here */
     animation: rotate 4s linear infinite;
-    border-radius: 20px;
+    border-radius: 1rem;
   }
   
   .animated-border-box:after {
@@ -47,7 +46,7 @@
     /*bg color*/
       background: rgba(0,0,0,0.9);
     /*box border radius*/
-      border-radius: 10px;
+      border-radius: 1rem;
   }
   
   @keyframes rotate {
@@ -55,13 +54,3 @@
           transform: translate(-50%, -50%) rotate(1turn);
       }
   }
-
-  .slogan-container {
-    opacity: 0;
-    transition: opacity 4s ease-in-out;
-  }
-  
-  .slogan-container.fade-in {
-    opacity: 1;
-  }
-  
