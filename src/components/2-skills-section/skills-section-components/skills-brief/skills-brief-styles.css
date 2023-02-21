@@ -1,0 +1,52 @@
+.skills-brief-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    min-width: 200px;
+    min-height: 550px;
+  }
+  
+  .skills-brief-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 85%;
+    height: 80%;
+    border-radius: 1rem;
+    object-fit: cover;
+    box-shadow: rgba(255,255,255, 0.3) 0px 7px 15px 12px;
+  }
+  
+  .skills-brief-caption {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 85%;
+    height: 80%;
+    border-radius: 1rem;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 5% 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: rgba(255,255,255, 0.3) 0px 7px 15px 12px;
+  }
+  
+  .skills-brief-heading {
+    color: white;
+    font-size: 1.3rem;
+    letter-spacing: 0.1rem;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .skills-brief-text {
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+  }
+  

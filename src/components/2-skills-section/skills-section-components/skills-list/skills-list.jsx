@@ -6,8 +6,8 @@ function SkillsList() {
     <Container
       className="my-4"
       style={{
-        width: '100%',
-        height: '100%',
+        padding: 0,
+        border: 'none',
       }}
     >
       <Row className="justify-content-center">
@@ -15,6 +15,7 @@ function SkillsList() {
           <Card
             style={{
               border: 'none',
+              padding: 0,
             }}
           >
             <Card.Header className="bg-white">

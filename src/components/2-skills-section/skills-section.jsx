@@ -23,6 +23,7 @@ function SkillsSection() {
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat',
+          width: '100%',
         }}
       >
         <div
@@ -36,7 +37,6 @@ function SkillsSection() {
               display: 'flex',
               justifyContent: 'space-around',
               padding: isVertical ? '2rem 0 0 0' : '1rem 0 0 0',
-              width: '100vw',
             }}
           >
             <div

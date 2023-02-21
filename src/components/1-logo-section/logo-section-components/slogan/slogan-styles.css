@@ -48,6 +48,21 @@
     /*box border radius*/
       border-radius: 1rem;
   }
+
+  .call-to-action{
+    font-size: 1rem;
+    color: white;
+    padding: 1rem;
+    min-width: 250px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.2rem;
+    word-spacing: 0.4rem;
+    margin: 0;
+    width: 100%;
+  }
   
   @keyframes rotate {
       100% {

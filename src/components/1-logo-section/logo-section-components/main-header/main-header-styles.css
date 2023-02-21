@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 1rem;
+    padding: 3%;
+  }
+  
+  .container.vertical {
+    padding: 8% 1%;
+  }
+  
+  .logo {
+    width: 70%;
+  }
+  
+  .slogan {
+    width: 90%;
+  }
+  

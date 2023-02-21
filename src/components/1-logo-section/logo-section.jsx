@@ -23,6 +23,7 @@ function LogoSection() {
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat',
+          width: '100%',
         }}
       >
         <div
@@ -49,6 +50,7 @@ function LogoSection() {
                 flexDirection: 'column',
                 width: isVertical ? '90%' : '50%',
                 transform: 'scale(0.9)',
+                height: '100%',
               }}
             >
               <MainHeader />

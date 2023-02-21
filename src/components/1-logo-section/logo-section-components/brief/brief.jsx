@@ -7,41 +7,15 @@ function Brief() {
     <div
       className="card"
       style={{
-        borderRadius: '1rem',
-        backgroundColor: 'rgba(0,0,0,0.7)',
-        width: '100%',
-        height: '100%',
-        padding: '3%',
+        backgroundColor: 'rgba(0, 0, 0, 0.7)',
       }}
     >
-      <div
-        className="card-body"
-        style={{
-          display: 'flex',
-          justifyContent: 'center',
-          flexDirection: 'column',
-          alignItems: 'space-between',
-        }}
-      >
-        <p
-          className="card-text"
-          style={{
-            color: 'white',
-            fontSize: '1.2rem',
-            textAlign: 'center',
-          }}
-        >
+      <div className="card-body">
+        <p className="card-text">
           Find out how I can develop your company's website as an extension of
           the brand
         </p>
-        {/* eslint-disable-next-line */}
-        <a
-          href="#"
-          className="btn btn-primary"
-          style={{
-            width: '100%',
-          }}
-        >
+        <a href="#" className="btn btn-primary">
           Download Resume
         </a>
       </div>
