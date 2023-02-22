@@ -1,7 +1,7 @@
-import HomePage from './pages/home-page.jsx';
+import JSBDevPage from './pages/jsb-dev-page.jsx';
 
 function App() {
-  return <HomePage />;
+  return <JSBDevPage />;
 }
 
 export default App;

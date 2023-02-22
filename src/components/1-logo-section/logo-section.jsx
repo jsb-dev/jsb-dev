@@ -1,7 +1,7 @@
 import React from 'react';
 import MainHeader from './logo-section-components/main-header/main-header.jsx';
 import Brief from './logo-section-components/brief/brief.jsx';
-import StarsBg from '../../assets/images/section-1-bg-casey-horner.jpg';
+import StarsBg from '../../assets/images/light-travel-bg.jpg';
 import { CheckOrientation } from '../../utils/CheckOrientation.jsx';
 import { CheckDevice } from '../../utils/CheckDevice.jsx';
 
@@ -33,7 +33,7 @@ function LogoSection() {
         >
           <div
             style={{
-              backgroundColor: 'rgba(102, 38, 158, 0.1)',
+              backgroundColor: 'rgba(102, 38, 158, 0.2)',
               display: 'flex',
               flexDirection: 'column',
               justifyContent: 'center',

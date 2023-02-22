@@ -1,7 +1,7 @@
 import React from 'react';
 import { CheckOrientation } from '../../utils/CheckOrientation.jsx';
 import { CheckDevice } from '../../utils/CheckDevice.jsx';
-import MelbBg from '../../assets/images/melb-bg.jpg';
+import NebulaBg from '../../assets/images/nebula-bg.jpg';
 import SkillsBrief from './skills-section-components/skills-brief/skills-brief.jsx';
 import SkillsList from './skills-section-components/skills-list/skills-list.jsx';
 
@@ -19,7 +19,7 @@ function SkillsSection() {
     >
       <div
         style={{
-          backgroundImage: `url(${MelbBg})`,
+          backgroundImage: `url(${NebulaBg})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat',
@@ -33,10 +33,11 @@ function SkillsSection() {
         >
           <div
             style={{
-              backgroundColor: 'rgba(102, 38, 158, 0.1)',
+              backgroundColor: 'rgba(102, 38, 158, 0.3)',
               display: 'flex',
               justifyContent: 'space-around',
               padding: isVertical ? '2rem 0 0 0' : '1rem 0 0 0',
+              boxShadow: 'inset 0 0 2.5rem 1.5rem rgb(0, 0, 0)',
             }}
           >
             <div
