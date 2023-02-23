@@ -2,19 +2,20 @@ import React from 'react';
 import { CheckOrientation } from '../../../utils/CheckOrientation.jsx';
 import { CheckDevice } from '../../../utils/CheckDevice.jsx';
 
-function ImgSectionBreaker({ background, topContent, bottomContent }) {
+function ImgSectionBreaker({
+  background,
+  topContent,
+  midContent,
+  bottomContent,
+}) {
   const isVertical = CheckOrientation();
   const isMobile = CheckDevice();
 
   return (
     <section
       style={{
-        height: isVertical
-          ? '100vh'
-          : !isVertical && isMobile
-          ? '150vh'
-          : '100vh',
-        maxHeight: isVertical ? 900 : !isVertical && isMobile ? 600 : '',
+        height: '100vh',
+        maxHeight: isVertical ? 600 : !isVertical && isMobile ? 600 : 500,
       }}
     >
       <figure
@@ -31,40 +32,24 @@ function ImgSectionBreaker({ background, topContent, bottomContent }) {
       >
         <div
           style={{
-            backgroundColor: 'rgba(0, 0, 0, 0.6)',
+            backgroundColor: 'rgba(0, 0, 0, 0.7)',
             height: '100%',
             width: '100%',
           }}
         >
           <div
             style={{
-              backgroundColor: 'rgba(102, 38, 158, 0.2)',
+              backgroundColor: 'rgba(102, 38, 158, 0.1)',
               width: '100%',
               height: '100%',
               display: 'flex',
-              justifyContent: 'space-around',
+              flexDirection: 'column',
+              justifyContent: 'space-between',
             }}
           >
-            <div
-              style={{
-                position: 'absolute',
-                top: 0,
-                left: 0,
-                marginBottom: '20%',
-              }}
-            >
-              {topContent}
-            </div>
-            <div
-              style={{
-                position: 'absolute',
-                bottom: 0,
-                right: 0,
-                marginTop: '20%',
-              }}
-            >
-              {bottomContent}
-            </div>
+            <div>{topContent}</div>
+            <div>{midContent}</div>
+            <div>{bottomContent}</div>
           </div>
         </div>
       </figure>

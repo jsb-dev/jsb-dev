@@ -1,10 +1,13 @@
 import React from 'react';
-import MainHeader from './logo-section-components/main-header/main-header.jsx';
-import Brief from './logo-section-components/brief/brief.jsx';
 import { CheckOrientation } from '../../utils/CheckOrientation.jsx';
 import { CheckDevice } from '../../utils/CheckDevice.jsx';
+import {
+  FrontEndCard,
+  BackEndCard,
+  FullStackCard,
+} from './full-stack-section-parts/description-cards/description-cards.jsx';
 
-function LogoSection() {
+function FullStackSection() {
   const isVertical = CheckOrientation();
   const isMobile = CheckDevice();
 
@@ -29,39 +32,44 @@ function LogoSection() {
           <div
             style={{
               display: 'flex',
-              flexDirection: 'column',
-              justifyContent: 'center',
-              alignItems: 'center',
-              padding: isVertical
-                ? '1rem 0'
-                : !isVertical && isMobile
-                ? '1rem 0'
-                : '1rem 0',
-              minHeight: '100vh',
-              transform: isVertical && isMobile ? 'scale(0.9)' : '',
+              justifyContent: 'space-around',
             }}
           >
             <div
               style={{
-                display: 'flex',
-                alignItems: 'center',
-                flexDirection: 'column',
-                width: isVertical
-                  ? '90%'
+                margin: isVertical
+                  ? '5rem 0'
                   : !isVertical && isMobile
-                  ? '90%'
-                  : '30%',
-                maxWidth: !isVertical && isMobile ? 400 : 600,
+                  ? '5rem 0'
+                  : '',
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
+                width: '100%',
+                height: '100%',
+                padding: isVertical ? '1% 5%' : '1%',
               }}
             >
-              <MainHeader />
+              <div
+                style={{
+                  marginTop: !isVertical ? '5%' : '',
+                }}
+              >
+                <FrontEndCard />
+              </div>
               <div
                 style={{
                   marginTop: '5%',
-                  width: '100%',
                 }}
               >
-                <Brief />
+                <BackEndCard />
+              </div>
+              <div
+                style={{
+                  marginTop: '5%',
+                }}
+              >
+                <FullStackCard />
               </div>
             </div>
           </div>
@@ -71,4 +79,4 @@ function LogoSection() {
   );
 }
 
-export default LogoSection;
+export default FullStackSection;

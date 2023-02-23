@@ -1,20 +1,22 @@
 import React from 'react';
 import LogoSection from '../components/1-logo-section/logo-section';
 import SkillsSection from '../components/2-skills-section/skills-section';
+import FullStackSection from '../components/3-full-stack-section/full-stack-section';
 import {
   NebulaSectionBreaker,
   NeonSectionBreaker,
 } from '../components/section-breakers/section-breakers.jsx';
 
-function HomePage() {
+function JSBDevPage() {
   return (
     <>
       <LogoSection />
       <NebulaSectionBreaker />
       <SkillsSection />
       <NeonSectionBreaker />
+      <FullStackSection />
     </>
   );
 }
 
-export default HomePage;
+export default JSBDevPage;

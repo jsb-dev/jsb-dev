@@ -3,26 +3,26 @@ import NeonBg from '../../assets/images/neon-bg.jpg';
 import MelbBg from '../../assets/images/melb-bg.jpg';
 import ImgSectionBreaker from './section-breakers-components/img-section-breaker.jsx';
 
-const contentContainer = {
-  color: 'white',
-  padding: '1rem',
-};
-
-const topParagraphStyles = {
-  textAlign: 'left',
-  fontSize: '1rem',
-};
-
-const bottomParagraphStyles = {
-  textAlign: 'right',
-  fontSize: '1rem',
-};
-
-const headerStyles = {
-  fontSize: '1.8rem',
-};
-
 export function NebulaSectionBreaker() {
+  const contentContainer = {
+    color: 'white',
+    padding: '1rem',
+  };
+
+  const topParagraphStyles = {
+    textAlign: 'left',
+    fontSize: '1rem',
+  };
+
+  const bottomParagraphStyles = {
+    textAlign: 'right',
+    fontSize: '1rem',
+  };
+
+  const headerStyles = {
+    fontSize: '1.8rem',
+  };
+
   const topContent = (
     <div style={contentContainer}>
       <h1 style={headerStyles}>A bit about myself</h1>
@@ -58,9 +58,34 @@ export function NebulaSectionBreaker() {
 }
 
 export function NeonSectionBreaker() {
+  const midContent = (
+    <div
+      style={{
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center',
+        color: 'white',
+        textAlign: 'center',
+        padding: '1rem',
+      }}
+    >
+      <h1 style={{}}>Contemporary solutions for a dynamic industry</h1>
+      <p
+        style={{
+          marginTop: '5%',
+        }}
+      >
+        By continuing my educationn in both official academic and personal
+        contexts, I can offer industry best practises, and contemporary
+        solutions to your business needs.
+      </p>
+    </div>
+  );
+
   return (
     <section>
-      <ImgSectionBreaker background={NeonBg} />
+      <ImgSectionBreaker background={NeonBg} midContent={midContent} />
     </section>
   );
 }

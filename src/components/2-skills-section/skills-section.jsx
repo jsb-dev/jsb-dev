@@ -1,7 +1,6 @@
 import React from 'react';
 import { CheckOrientation } from '../../utils/CheckOrientation.jsx';
 import { CheckDevice } from '../../utils/CheckDevice.jsx';
-import NebulaBg from '../../assets/images/nebula-bg.jpg';
 import SkillsBrief from './skills-section-components/skills-brief/skills-brief.jsx';
 import SkillsList from './skills-section-components/skills-list/skills-list.jsx';
 
@@ -19,29 +18,29 @@ function SkillsSection() {
     >
       <div
         style={{
-          backgroundImage: `url(${NebulaBg})`,
+          backgroundColor: '#171717',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat',
           width: '100%',
         }}
       >
-        <div
-          style={{
-            backgroundColor: 'rgba(0, 0, 0, 0.3)',
-          }}
-        >
+        <div>
           <div
             style={{
-              backgroundColor: 'rgba(102, 38, 158, 0.3)',
               display: 'flex',
               justifyContent: 'space-around',
-              padding: isVertical ? '2rem 0 0 0' : '1rem 0 0 0',
-              boxShadow: 'inset 0 0 2.5rem 1.5rem rgb(0, 0, 0)',
+              boxShadow: 'inset 0 0 2rem 0.5rem rgb(0, 0, 0)',
+              padding: '1rem',
             }}
           >
             <div
               style={{
+                margin: isVertical
+                  ? '5rem 0'
+                  : !isVertical && isMobile
+                  ? '5rem 0'
+                  : '',
                 position: 'relative',
                 display: 'flex',
                 flexDirection: isVertical
@@ -52,7 +51,7 @@ function SkillsSection() {
                 alignItems: 'center',
                 width: '100%',
                 height: '100%',
-                padding: isMobile ? '3% 5%' : '0 0 0 3%',
+                padding: isVertical ? '1% 3%' : '0 1%',
               }}
             >
               <div
@@ -62,7 +61,6 @@ function SkillsSection() {
                     : !isVertical && isMobile
                     ? '100%'
                     : '40%',
-                  height: isVertical ? '50%' : '100%',
                 }}
               >
                 <SkillsBrief />
@@ -75,7 +73,12 @@ function SkillsSection() {
                     ? '100%'
                     : '60%',
                   height: isVertical ? '50%' : '100%',
-                  padding: '2%',
+                  padding: isVertical ? '' : '2%',
+                  marginTop: isVertical
+                    ? '10%'
+                    : !isVertical && isMobile
+                    ? '10%'
+                    : '',
                 }}
               >
                 <SkillsList />

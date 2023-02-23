@@ -1,10 +1,7 @@
 import React from 'react';
 import './slogan-styles.css';
-import { CheckOrientation } from '../../../../utils/CheckOrientation.jsx';
 
 function Slogan() {
-  const isVertical = CheckOrientation();
-
   return (
     <div className={'slogan-container'}>
       <div className="center-box">

@@ -7,7 +7,7 @@ function SkillsList() {
       className="my-4"
       style={{
         padding: 0,
-        border: 'none',
+        border: 'solid 1px white',
       }}
     >
       <Row className="justify-content-center">
@@ -18,7 +18,13 @@ function SkillsList() {
               padding: 0,
             }}
           >
-            <Card.Header className="bg-white">
+            <Card.Header
+              className="bg-white"
+              style={{
+                borderTopLeftRadius: '1rem',
+                borderTopRightRadius: '1rem',
+              }}
+            >
               <h2 className="m-0">What I can bring to your company</h2>
             </Card.Header>
             <Card.Body className="bg-black text-white">
