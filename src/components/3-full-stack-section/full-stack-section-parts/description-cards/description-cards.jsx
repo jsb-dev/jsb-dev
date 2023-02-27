@@ -27,7 +27,7 @@ export function BackEndCard() {
   const brief = `My back-end development skillset is built on the foundation of Node.js and Express.js. Click to see more about my learning experiences.`;
 
   const modalTitle = 'Back-end Skills';
-  const modalBody = `My back-end skills expand upon an academic understanding of the fundamentals of computer science. It feels the most familiar to me in the sense that it's the closest representation of the concepts I learnt while doing my Diploma of Information Technology, where I first learnt programming in an official capacity. There's a sort of 'zen' I find with creating database queries, designs and models, and using this in conjunction with other backend services. This allows me to create APIs and services that are easy to use and maintain, and that can be easily integrated into other projects.`;
+  const modalBody = `My back-end skills expand upon an academic education of the fundamentals of computer science. It feels the most familiar to me in the sense that it's the closest representation of the concepts I learnt while doing my Diploma of Information Technology, where I first learnt programming in an official capacity. There's a sort of 'zen' I find with creating database queries, designs and models, and using this in conjunction with other backend services. This allows me to create APIs and services that are easy to use and maintain, and that can be easily integrated into other projects.`;
 
   return (
     <ThumbnailDescriptionCard

@@ -88,6 +88,7 @@ function ThumbnailDescriptionCard({
         size="lg"
         style={{
           backgroundColor: 'rgba(0, 0, 0, 0.5)',
+          transition: 'ease-in-out 0.3s',
         }}
       >
         <Modal.Header closeButton>

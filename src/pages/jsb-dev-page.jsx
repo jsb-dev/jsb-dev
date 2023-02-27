@@ -5,6 +5,7 @@ import FullStackSection from '../components/3-full-stack-section/full-stack-sect
 import {
   NebulaSectionBreaker,
   NeonSectionBreaker,
+  ProjectsSectionBreaker,
 } from '../components/section-breakers/section-breakers.jsx';
 
 function JSBDevPage() {
@@ -15,6 +16,7 @@ function JSBDevPage() {
       <SkillsSection />
       <NeonSectionBreaker />
       <FullStackSection />
+      <ProjectsSectionBreaker />
     </>
   );
 }

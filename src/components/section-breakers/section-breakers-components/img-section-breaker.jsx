@@ -20,6 +20,7 @@ function ImgSectionBreaker({
     >
       <figure
         style={{
+          backgroundColor: '#171717',
           backgroundImage: `url(${background})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',

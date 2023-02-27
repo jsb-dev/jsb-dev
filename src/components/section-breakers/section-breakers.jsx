@@ -89,3 +89,35 @@ export function NeonSectionBreaker() {
     </section>
   );
 }
+
+export function ProjectsSectionBreaker() {
+  const midContent = (
+    <div
+      style={{
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center',
+        color: 'white',
+        textAlign: 'center',
+        padding: '1rem',
+      }}
+    >
+      <h1 style={{}}>Projects</h1>
+      <p
+        style={{
+          marginTop: '5%',
+        }}
+      >
+        Here you can find overviews and links to the projects that I've
+        developed.
+      </p>
+    </div>
+  );
+
+  return (
+    <section>
+      <ImgSectionBreaker midContent={midContent} />
+    </section>
+  );
+}

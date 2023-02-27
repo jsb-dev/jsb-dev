@@ -23,6 +23,7 @@ function LogoSection() {
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat',
           width: '100%',
+          boxShadow: 'inset 0 0 2rem 0.5rem rgb(0, 0, 0)',
         }}
       >
         <div>
@@ -37,7 +38,8 @@ function LogoSection() {
                 : !isVertical && isMobile
                 ? '1rem 0'
                 : '1rem 0',
-              minHeight: '100vh',
+              height: isVertical ? '100vh' : '',
+              minHeight: !isVertical ? '100vh' : '',
               transform: isVertical && isMobile ? 'scale(0.9)' : '',
             }}
           >
