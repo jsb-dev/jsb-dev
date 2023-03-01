@@ -1,8 +1,8 @@
 import React from 'react';
-import ThumbnailDescriptionCard from '../thumbnail-description-card/thumbnail-description-card.jsx';
-import FrontEndBg from '../../../../assets/images/front-end-bg.jpg';
-import BackEndBg from '../../../../assets/images/back-end-bg.jpg';
-import FullStackBg from '../../../../assets/images/full-stack-bg.jpg';
+import ThumbnailDescriptionCard from './thumbnail-description-card.jsx';
+import FrontEndBg from '../../../assets/images/front-end-bg.jpg';
+import BackEndBg from '../../../assets/images/back-end-bg.jpg';
+import FullStackBg from '../../../assets/images/full-stack-bg.jpg';
 
 export function FrontEndCard() {
   const title = 'Front-end';

@@ -33,7 +33,7 @@ function ImgSectionBreaker({
       >
         <div
           style={{
-            backgroundColor: 'rgba(0, 0, 0, 0.7)',
+            backgroundColor: 'rgba(0, 0, 0, 0.85)',
             height: '100%',
             width: '100%',
           }}

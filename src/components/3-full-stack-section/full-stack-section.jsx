@@ -5,7 +5,7 @@ import {
   FrontEndCard,
   BackEndCard,
   FullStackCard,
-} from './full-stack-section-parts/description-cards/description-cards.jsx';
+} from './full-stack-section-components/description-cards.jsx';
 
 function FullStackSection() {
   const isVertical = CheckOrientation();

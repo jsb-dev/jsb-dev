@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { CheckOrientation } from '../../../../utils/CheckOrientation.jsx';
-import { CheckDevice } from '../../../../utils/CheckDevice.jsx';
+import { CheckOrientation } from '../../../utils/CheckOrientation.jsx';
+import { CheckDevice } from '../../../utils/CheckDevice.jsx';
 import { Card, Button, Modal } from 'react-bootstrap';
 
 function ThumbnailDescriptionCard({

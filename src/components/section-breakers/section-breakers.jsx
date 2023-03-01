@@ -3,7 +3,7 @@ import NeonBg from '../../assets/images/neon-bg.jpg';
 import MelbBg from '../../assets/images/melb-bg.jpg';
 import ImgSectionBreaker from './section-breakers-components/img-section-breaker.jsx';
 
-export function NebulaSectionBreaker() {
+export function MelbSectionBreaker() {
   const contentContainer = {
     color: 'white',
     padding: '1rem',
