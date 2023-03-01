@@ -38,7 +38,7 @@ function ProjectsSection() {
             justifyContent: 'center',
             alignItems: 'center',
             minHeight: isVertical
-              ? '50vh'
+              ? '40vh'
               : !isVertical && isMobile
               ? '90vh'
               : '50vh',
@@ -54,7 +54,7 @@ function ProjectsSection() {
             justifyContent: 'center',
             alignItems: 'center',
             minHeight: isVertical
-              ? '50vh'
+              ? '40vh'
               : !isVertical && isMobile
               ? '90vh'
               : '50vh',
@@ -85,7 +85,7 @@ function ProjectsSection() {
             </h1>
             <code>
               <p style={{ color: 'white' }}>
-                Applicate is a cloud-based, MERN stack application. It's
+                Applicate is a cloud-based, MERN stack application. It's a
                 collaborative note-taking and documenting platform that's
                 designed for easy, simplified planning/note-taking
                 documentation. Applicate is completely responsive and will
