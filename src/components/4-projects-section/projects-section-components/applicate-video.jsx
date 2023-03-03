@@ -31,7 +31,7 @@ function ApplicateVideo() {
             ? '46.25vw'
             : !isVertical && isMobile
             ? '46.25vw'
-            : '22.5vw',
+            : '50vh',
           maxHeight: '95vh',
           boxShadow: ' 0 0 2rem 0.1rem rgba(255, 255, 255, 0.3)',
         }}

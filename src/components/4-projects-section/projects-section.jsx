@@ -42,8 +42,6 @@ function ProjectsSection() {
               : !isVertical && isMobile
               ? '90vh'
               : '50vh',
-            height: !isVertical && !isMobile ? '50vh' : '',
-            padding: !isVertical && isMobile ? '2rem 0' : '',
           }}
         >
           <ApplicateVideo />
@@ -58,8 +56,6 @@ function ProjectsSection() {
               : !isVertical && isMobile
               ? '90vh'
               : '50vh',
-            height: !isVertical && !isMobile ? '50vh' : '',
-            padding: !isVertical && isMobile ? '2rem 0' : '',
           }}
         >
           <article
@@ -76,7 +72,7 @@ function ProjectsSection() {
                 : !isVertical && isMobile
                 ? '100vw'
                 : '45vw',
-              height: !isVertical && !isMobile ? '22.5vw' : '',
+              height: !isVertical && !isMobile ? '50vh' : '',
               maxHeight: !isVertical && !isMobile ? '95vh' : '',
             }}
           >
