@@ -60,10 +60,12 @@ function SkillsSection() {
                     ? '100%'
                     : !isVertical && isMobile
                     ? '100%'
-                    : '40%',
+                    : '60%',
+                  height: isVertical ? '50%' : '100%',
+                  padding: isVertical ? '' : '2%',
                 }}
               >
-                <SkillsBrief />
+                <SkillsList />
               </div>
               <div
                 style={{
@@ -71,9 +73,7 @@ function SkillsSection() {
                     ? '100%'
                     : !isVertical && isMobile
                     ? '100%'
-                    : '60%',
-                  height: isVertical ? '50%' : '100%',
-                  padding: isVertical ? '' : '2%',
+                    : '40%',
                   marginTop: isVertical
                     ? '10%'
                     : !isVertical && isMobile
@@ -81,7 +81,7 @@ function SkillsSection() {
                     : '',
                 }}
               >
-                <SkillsList />
+                <SkillsBrief />
               </div>
             </div>
           </div>

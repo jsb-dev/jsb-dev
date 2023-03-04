@@ -87,8 +87,12 @@ function ThumbnailDescriptionCard({
         centered
         size="lg"
         style={{
-          backgroundColor: 'rgba(0, 0, 0, 0.5)',
-          transition: 'ease-in-out 0.3s',
+          height: showModal ? '100vh' : '0',
+          backgroundColor: showModal
+            ? 'rgba(0, 0, 0, 0.7)'
+            : 'rgba(0, 0, 0, 0)',
+          boxShadow: '0 0 5rem 1rem rgba(0, 0, 0, 0.7)',
+          transition: 'all ease-in-out 0.5s',
         }}
       >
         <Modal.Header closeButton>
@@ -96,16 +100,11 @@ function ThumbnailDescriptionCard({
         </Modal.Header>
         <Modal.Body
           style={{
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
             backgroundImage: `url(${thumbnail})`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat',
             padding: 0,
-            width: '100%',
-            height: '100%',
           }}
         >
           <div
@@ -113,8 +112,6 @@ function ThumbnailDescriptionCard({
               backgroundColor: 'rgba(0, 0, 0, 0.8)',
               padding: '2rem',
               color: 'white',
-              width: '100%',
-              height: '100%',
             }}
           >
             <p>{modalBody}</p>

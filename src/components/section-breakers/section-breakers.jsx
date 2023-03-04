@@ -121,3 +121,46 @@ export function ProjectsSectionBreaker() {
     </section>
   );
 }
+
+export function ExtendedSkillsSectionBreaker() {
+  const contentContainer = {
+    color: 'white',
+    padding: '1rem',
+  };
+
+  const topParagraphStyles = {
+    textAlign: 'left',
+    fontSize: '1rem',
+  };
+
+  const bottomParagraphStyles = {
+    textAlign: 'right',
+    fontSize: '1rem',
+  };
+
+  const headerStyles = {
+    fontSize: '1.8rem',
+  };
+
+  const topContent = (
+    <div style={contentContainer}>
+      <h1 style={headerStyles}>Extended Skills</h1>
+    </div>
+  );
+
+  const bottomContent = (
+    <div style={contentContainer}>
+      <p style={bottomParagraphStyles}>An elaboration on this section </p>
+    </div>
+  );
+
+  return (
+    <section>
+      <ImgSectionBreaker
+        background={''}
+        topContent={topContent}
+        bottomContent={bottomContent}
+      />
+    </section>
+  );
+}

@@ -29,7 +29,7 @@ function ProjectsSection() {
           backgroundRepeat: 'no-repeat',
           width: '100%',
           boxShadow: 'inset 0 0 2rem 0.5rem rgb(0, 0, 0)',
-          padding: '1rem',
+          padding: '5rem 0',
         }}
       >
         <div
@@ -46,25 +46,15 @@ function ProjectsSection() {
         >
           <ApplicateVideo />
         </div>
-        <div
-          style={{
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
-            minHeight: isVertical
-              ? '40vh'
-              : !isVertical && isMobile
-              ? '90vh'
-              : '50vh',
-          }}
-        >
+        <div>
           <article
             style={{
+              marginTop: !isMobile && !isVertical ? '' : 'max(5vh,5vw,)',
               display: 'flex',
               flexDirection: 'column',
               justifyContent: 'center',
               alignItems: 'center',
-              padding: '2rem',
+              padding: '1rem 2rem',
               backgroundColor: 'rgba(255, 255, 255, 0.1)',
               borderRadius: !isVertical && !isMobile ? '1rem' : '',
               width: isVertical

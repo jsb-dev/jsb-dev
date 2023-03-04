@@ -28,7 +28,7 @@ function ExtendedSkillsSection() {
           backgroundRepeat: 'no-repeat',
           width: '100%',
           boxShadow: 'inset 0 0 2rem 0.5rem rgb(0, 0, 0)',
-          padding: '1rem',
+          padding: '3rem',
         }}
       >
         <div

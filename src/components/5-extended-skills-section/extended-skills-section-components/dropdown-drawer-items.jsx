@@ -16,8 +16,12 @@ function DropdownDrawerItem({ title, body, thumbnail }) {
   return (
     <div
       style={{
-        width: '100%',
-        padding: '1rem',
+        boxShadow: isExpanded ? '0 0 1rem 0.1rem rgba(255,255,255, 0.2)' : '',
+        borderRadius: '1rem',
+        border: isExpanded ? 'none' : '3px solid rgba(255,255,255,0.2)',
+        transition: 'all 0.5s ease-in-out',
+        margin: isExpanded ? '1rem 0' : '0',
+        transition: 'all 0.5s ease-in-out',
       }}
     >
       <div
@@ -28,17 +32,13 @@ function DropdownDrawerItem({ title, body, thumbnail }) {
           backgroundColor: isExpanded
             ? 'rgba(255,255,255,0.1)'
             : 'rgba(0, 0, 0, 0.7)',
+          padding: '1rem',
           borderTopLeftRadius: '1rem',
           borderTopRightRadius: '1rem',
           borderBottomLeftRadius: isExpanded ? '0' : '1rem',
           borderBottomRightRadius: isExpanded ? '0' : '1rem',
-          boxShadow: isExpanded
-            ? 'none'
-            : '0 0 1rem 0.1rem rgba(255,255,255, 0.2)',
-          border: isExpanded ? 'none' : '3px solid rgba(255,255,255,0.2)',
-          padding: '1rem',
-          transition: 'all 0.5s ease-in-out',
           color: 'white',
+          transition: 'all 0.5s ease-in-out',
         }}
       >
         <h2>{title}</h2>
@@ -58,45 +58,32 @@ function DropdownDrawerItem({ title, body, thumbnail }) {
       </div>
       <div
         style={{
+          backgroundImage: `url(${thumbnail})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
           overflow: 'hidden',
-          boxShadow:
-            'inset 0 0 1rem 0.1rem rgba(255,255,255, 0.2), 0 0 1rem 0.1rem rgba(255,255,255, 0.2)',
-          minHeight: isExpanded ? '300px' : '0',
-          height: isExpanded ? 'auto' : '0',
-          padding: isExpanded ? '2rem' : '1rem',
-          opacity: isExpanded ? 1 : 0,
+          boxShadow: 'inset 0 0 1rem 0.1rem rgba(255,255,255, 0.2)',
           color: 'white',
-          transition: 'all 0.5s ease-in-out',
-          display: 'flex',
-          justifyContent: 'space-between',
-          backgroundColor: 'rgba(0, 0, 0, 0.7)',
+          borderBottomLeftRadius: '1rem',
+          borderBottomRightRadius: '1rem',
           flexDirection: !isMobile && !isVertical ? 'row' : 'column',
         }}
       >
-        <p
-          style={{
-            marginBottom: '2rem',
-          }}
-        >
-          {body}
-        </p>
         <div
           style={{
-            width: !isMobile && !isVertical ? '50%' : '100%',
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
+            backgroundColor: 'rgba(0, 0, 0, 0.7)',
+            height: isExpanded ? '300px' : '0',
+            transition: 'all 0.5s ease-in-out',
           }}
         >
-          <img
-            src={thumbnail}
+          <p
             style={{
-              width: '80%',
-              objectFit: 'cover',
-              objectPosition: 'center',
-              borderRadius: '1rem',
+              padding: '1rem',
             }}
-          />
+          >
+            {body}
+          </p>
         </div>
       </div>
     </div>

@@ -8,6 +8,7 @@ import {
   MelbSectionBreaker,
   NeonSectionBreaker,
   ProjectsSectionBreaker,
+  ExtendedSkillsSectionBreaker,
 } from '../components/section-breakers/section-breakers.jsx';
 
 function JSBDevPage() {
@@ -20,6 +21,7 @@ function JSBDevPage() {
       <FullStackSection />
       <ProjectsSectionBreaker />
       <ProjectsSection />
+      <ExtendedSkillsSectionBreaker />
       <ExtendedSkillsSection />
     </>
   );
