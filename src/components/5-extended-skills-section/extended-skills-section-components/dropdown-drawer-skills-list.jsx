@@ -1,25 +1,31 @@
-import Accordion from 'react-bootstrap/Accordion';
+import React from 'react';
+import DropdownDrawerItem from './dropdown-drawer-item';
+import img from '../../../assets/images/back-end-bg.jpg';
+
+const skillsList = [
+  {
+    title: 'HTML',
+    body: 'I have a good understanding of HTML and can use it to create a basic website.',
+  },
+];
 
 function DropdownDrawerSkillsList() {
   return (
-    <Accordion
+    <ul
       style={{
+        listStyle: 'none',
+        padding: '0',
         width: '100%',
       }}
     >
-      <Accordion.Item eventKey="0">
-        <Accordion.Header>Accordion Item #1</Accordion.Header>
-        <Accordion.Body>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
-        </Accordion.Body>
-      </Accordion.Item>
-    </Accordion>
+      <li>
+        <DropdownDrawerItem
+          title={'Test'}
+          body={'This is the test item'}
+          thumbnail={img}
+        />
+      </li>
+    </ul>
   );
 }
 
