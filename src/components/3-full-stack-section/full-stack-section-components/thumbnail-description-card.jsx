@@ -87,7 +87,7 @@ function ThumbnailDescriptionCard({
         centered
         size="lg"
         style={{
-          height: showModal ? '100vh' : '0',
+          height: showModal ? '100vh' : '60vh',
           backgroundColor: showModal
             ? 'rgba(0, 0, 0, 0.7)'
             : 'rgba(0, 0, 0, 0)',

@@ -7,7 +7,6 @@ function SkillsList() {
       className="my-4"
       style={{
         padding: 0,
-        border: 'solid 1px white',
       }}
     >
       <Row className="justify-content-center">
@@ -27,7 +26,12 @@ function SkillsList() {
             >
               <h2 className="m-0">What I can bring to your company</h2>
             </Card.Header>
-            <Card.Body className="bg-black text-white">
+            <Card.Body
+              className="bg-black text-white"
+              style={{
+                boxShadow: 'inset 0 0 1rem 0.5rem rgb(255, 255, 255, 0.2)',
+              }}
+            >
               <p>
                 My experiences and education have equipped me with the following
                 hard skills...

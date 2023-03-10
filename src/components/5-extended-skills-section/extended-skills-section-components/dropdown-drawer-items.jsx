@@ -30,14 +30,14 @@ function DropdownDrawerItem({ title, body, thumbnail }) {
           justifyContent: 'space-between',
           alignItems: 'center',
           backgroundColor: isExpanded
-            ? 'rgba(255,255,255,0.1)'
+            ? 'rgba(255,255,255,0.7)'
             : 'rgba(0, 0, 0, 0.7)',
           padding: '1rem',
           borderTopLeftRadius: '1rem',
           borderTopRightRadius: '1rem',
           borderBottomLeftRadius: isExpanded ? '0' : '1rem',
           borderBottomRightRadius: isExpanded ? '0' : '1rem',
-          color: 'white',
+          color: isExpanded ? 'black' : 'white',
           transition: 'all 0.5s ease-in-out',
         }}
       >
@@ -72,14 +72,26 @@ function DropdownDrawerItem({ title, body, thumbnail }) {
       >
         <div
           style={{
-            backgroundColor: 'rgba(0, 0, 0, 0.7)',
-            height: isExpanded ? '300px' : '0',
+            backgroundColor: 'rgba(0, 0, 0, 0.8)',
+            height:
+              isExpanded && !isMobile
+                ? '500px'
+                : isExpanded && isMobile && isVertical
+                ? '450px'
+                : isExpanded && isMobile && !isVertical
+                ? '400px'
+                : '0',
             transition: 'all 0.5s ease-in-out',
           }}
         >
           <p
             style={{
               padding: '1rem',
+              fontSize: isVertical
+                ? '2.5vh'
+                : !isVertical && isMobile
+                ? '3.2vw'
+                : '2.6vw',
             }}
           >
             {body}
